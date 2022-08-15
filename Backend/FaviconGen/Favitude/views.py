@@ -9,7 +9,11 @@ def about(request):
 
 
 def login_page(request):
+  
   return render(request, 'Favitude/login.html')
+def home_page(request):
+  
+  return render(request, 'Favitude/home.html')
 
 
 def signup_page(request):
@@ -25,4 +29,19 @@ def generate_page(request):
   return render(request, 'Favitude/generate.html')
 
 def imageGen_page(request):
-  return render(request, 'Favitude/imageGen.html')            
+  return render(request, 'Favitude/imageGen.html')         
+
+def documentation_page(request):
+  return render(request, 'Favitude/documentation.html')  
+
+def tutorial_page(request):
+  return render(request, 'Favitude/tutorial.html')   
+
+def gen_from_text_page(request):
+  return render(request, 'Favitude/gen_from_text.html')     
+
+def privacy_page(request):
+  return render(request, 'Favitude/privacy.html')       
+
+def FAQs_page(request):
+  return render(request, 'Favitude/FAQs.html')   
